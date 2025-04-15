@@ -6,8 +6,8 @@
     --primario: #FFC107;
     --secundario: #0097a7;
     --gris: #757575;
-
     --fuente-principal: 3.8rem;
+    --fuente-texto-exterior: "Krub", sans-serif;
 }
 
 
@@ -17,14 +17,27 @@ html{
 
 body{
     font-size: 16px;
+    font-family: var(--fuente-texto-exterior);
 }
 
 .titulo{
    text-align: center;
    font-size: var(--fuente-principal);
-   color: var(--primario);
 }
 
 .titulo span{
     font-size: 2rem;
+}
+
+.contenedor{
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.nav-bg{
+    background-color: var(--secundario);
+}
+
+.navegacion-principal{
+   
 }

@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diseñador Freelancer</title>
+    <link rel="preload" href="./css/normalize.css" as="style">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="preload" href="./css/styles.css" as="style"> <!-- Esto es para cargar la hoja de estilo mas rapido-->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -15,14 +20,15 @@
         <h1 class="titulo">Carlos Nin <span>Freelancer</span></h1>
     </header>
 
-    <nav>
-        <a href="./nosotros.html">Inicio</a>
-        <a href="./nosotros.html">Sobre mi</a>
-        <a href="./nosotros.html">Clientes</a>
-        <a href="./nosotros.html">Contacto</a>
-    </nav>
-
-
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="./nosotros.html">Inicio</a>
+            <a href="./nosotros.html">Sobre mi</a>
+            <a href="./nosotros.html">Clientes</a>
+            <a href="./nosotros.html">Contacto</a>
+        </nav>    
+    </div>
+    
 
     <section> <!-- Si tiene un headign en el aire lo mas recomandable es ponerlo dentro de una section-->
         <h2 class="titulo">Diseño y Desarollo web <span>Freelancer</span></h2>
