@@ -74,7 +74,6 @@ h1,h2,h3{
 }
 
 .navegacion-principal{
-<<<<<<< Updated upstream
    display: flex;
    flex-direction: column;
   
@@ -178,7 +177,9 @@ aplica el codigo css*/
     .ubicacion{
         flex-direction: row;
     }
-=======
+}
+
+.navegacion-principal{
    padding: 1rem;
    display: flex;
    justify-content: space-between;
@@ -188,5 +189,4 @@ aplica el codigo css*/
 .navegacion-principal a{
    color: var(--blanco);
    text-decoration: none;
->>>>>>> Stashed changes
 }
