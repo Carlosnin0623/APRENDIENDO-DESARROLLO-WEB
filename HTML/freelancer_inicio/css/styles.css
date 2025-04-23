@@ -1,4 +1,4 @@
-:root{
+:root {
     /* Custom Propertis */
 
     --blanco: #ffffff;
@@ -11,16 +11,21 @@
 }
 
 
-html{
+html {
     font-size: 62.5%;
     box-sizing: border-box;
+
+    /* Agregando efecto scroll en el html con esta propiedad css como es vertical se pone y pero si fuera horizontal ponemos x */
+    scroll-snap-type: y mandatory;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
-body{
+body {
     font-size: 16px;
     font-family: var(--fuente-texto-exterior);
 
@@ -28,32 +33,54 @@ body{
     background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%);
 }
 
-h1{
- font-size: 3.8rem;
+h1 {
+    font-size: 3.8rem;
 }
 
-h2{
- font-size: 2.8rem;
+h2 {
+    font-size: 2.8rem;
 }
 
-h3{
- font-size: 1.8rem;
+h3 {
+    font-size: 1.8rem;
 }
 
-h1,h2,h3{
+h1,
+h2,
+h3 {
     text-align: center;
 }
 
-.titulo span{
+.titulo span {
     font-size: 2rem;
 }
 
-.contenedor{
-    max-width: 120rem; /* Esta propiedad provocara que el contenedor de los enlaces ocupe el 100% del ancho hasta llegar a los 1200px */
+
+.w-sm-100{
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .w-sm-100 {
+        width: auto;
+    }
+}
+
+.flex{
+    display: flex;
+}
+
+.alinear-derecha{
+    justify-content: flex-end;
+}
+
+.contenedor {
+    max-width: 120rem;
+    /* Esta propiedad provocara que el contenedor de los enlaces ocupe el 100% del ancho hasta llegar a los 1200px */
     margin: 0 auto;
 }
 
-.boton{
+.boton {
     background-color: var(--secundario);
     color: var(--blanco);
     padding: 1rem 3rem;
@@ -65,60 +92,61 @@ h1,h2,h3{
     border-radius: .5rem;
     width: 90%;
     text-align: center;
+    border: none;
 }
 
 @media (min-width: 768px) {
-    .boton{
+    .boton {
         width: auto;
-    } 
-}
-  /* Poniendo sombra sobre un elemento con css usando esta pagina https://www.cssmatic.com/box-shadow */
-.sombra{
-
-  -webkit-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
-  -moz-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
-   box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
-   background-color: var(--blanco);
-   padding: 2rem;
-   border-radius: 1rem;
+    }
 }
 
-.nav-bg{
+.boton:hover{
+    cursor: pointer;
+}
+
+/* Poniendo sombra sobre un elemento con css usando esta pagina https://www.cssmatic.com/box-shadow */
+.sombra {
+
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.54);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.54);
+    box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.54);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.nav-bg {
     background-color: var(--secundario);
 }
 
-.navegacion-principal{
-   display: flex;
-   flex-direction: column;
-  
+.navegacion-principal {
+    display: flex;
+    flex-direction: column;
+
 }
+
 /* Media query cuando llegue al tamaño de la pantalla de un telefono */
-@media (min-width: 480px) {
-     
-}
+@media (min-width: 480px) {}
 
 /* Media query cuando llegue al tamaño de la pantalla de una tablet */
 @media (min-width: 768px) {
-    .navegacion-principal{
+    .navegacion-principal {
         flex-direction: row;
         justify-content: space-between;
-        
+
     }
 }
 
 /* Media query cuando llegue al tamaño de la pantalla de una laptops */
 
-@media (min-width: 1140px){
-
-}
+@media (min-width: 1140px) {}
 
 
 /* Media query cuando llegue al tamaño para monitores */
-@media (min-width: 1400px){
+@media (min-width: 1400px) {}
 
-}
-
-.navegacion-principal a{
+.navegacion-principal a {
     color: var(--blanco);
     display: block;
     text-align: center;
@@ -128,7 +156,7 @@ h1,h2,h3{
     padding: 1rem;
 }
 
-.navegacion-principal a:hover{
+.navegacion-principal a:hover {
     background-color: var(--primario);
     color: var(--oscuro);
 }
@@ -155,17 +183,18 @@ aplica el codigo css*/
 }
 
 */
-.hero{
+.hero {
     background-image: url(../img/hero.jpg);
     background-repeat: no-repeat;
-    background-size: cover; /* Esta propiedad hara que la imagen tome el 100% del ancho de su contenedor */
+    background-size: cover;
+    /* Esta propiedad hara que la imagen tome el 100% del ancho de su contenedor */
     height: 45rem;
-  /*  padding: 2rem;  pading para rellenar la imagen y no dejar espacios en blanco con el con el nav */
+    /*  padding: 2rem;  pading para rellenar la imagen y no dejar espacios en blanco con el con el nav */
     position: relative;
     margin-bottom: 2rem;
 }
 
-.contenido-hero{
+.contenido-hero {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
@@ -178,18 +207,18 @@ aplica el codigo css*/
 }
 
 .contenido-hero h2,
-.contenido-hero p{
-  color: var(--blanco);
+.contenido-hero p {
+    color: var(--blanco);
 }
 
-.ubicacion{
+.ubicacion {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 @media (min-width: 768px) {
-    .ubicacion{
+    .ubicacion {
         flex-direction: row;
     }
 }
@@ -197,14 +226,130 @@ aplica el codigo css*/
 
 /* Servicios */
 
-@media(min-width: 768px){
-    .servicios{
+.servicios,
+.navegacion-principal,
+.formulario{
+    /* Aqui le decimos a la web en que parte de la web tenga mas importancia el scroll snap y que se detenga */
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+
+@media(min-width: 768px) {
+    .servicios {
         /* Aqui estoy habilitando el grid */
         display: grid;
         /*  grid-template-columns: cuando quiero establecer la cantidad de columnas,  Aqui le dijo que quiero 3 columnas y a cada uno le asignara una dimension */
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         /*  grid-template-rows: para trabajar con la altura de la fila, aqui le dijo que la primera fila va a medir 200 px y la segunda fila va a medir 800px*/
-       /* grid-template-rows: 20rem 80rem;*/
+        /* grid-template-rows: 20rem 80rem;*/
+        column-gap: 1rem;
     }
 }
 
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.servicio h3 {
+ color: var(--secundario);
+ font-weight: normal;
+}
+
+.servicio p{
+    line-height: 2;
+}
+
+
+.servicio .iconos {
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* formulario contacto */
+
+.formulario{
+  background-color: var(--gris);
+ /* el va a comparar el valor min de 60rem con el 100% de la ancura del contenedor,
+  si 60rem es menor que el 100% entonces usara los 600px */
+  width: min(60rem, 100%); 
+
+  /* Magin: 0 auto se debe utilizar siempre que tengas un elemento aislado, cuyo padre no es un display flex 
+  de esa forma lo centras horizontalmente */
+
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+
+.formulario fieldset{
+    border: none;
+}
+
+.formulario legend{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: var(--primario);
+}
+
+@media(min-width:768px){
+    .contenedor-campos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto 20rem;
+        column-gap: 1rem;
+    }
+
+    .campo:nth-child(3){
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .campo:nth-child(4){
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+}
+.campo{
+  margin-bottom: 1rem;
+}
+
+.campo label{
+  color: var(--blanco);
+  font-weight: bold;
+  margin-bottom: .5rem;
+  display: block;
+}
+
+.campo textarea{
+    height: 20rem;
+}
+
+.input-text{
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.enviar .boton{
+    width: 100%;
+}
+
+/* Footer */
+
+.footer{
+  text-align: center;
+}
