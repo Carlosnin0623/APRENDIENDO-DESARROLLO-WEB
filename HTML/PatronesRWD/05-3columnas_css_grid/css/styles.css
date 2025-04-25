@@ -49,3 +49,23 @@ p {
 
 
 /** CODIGO AQUI **/
+
+@media (min-width:768px){
+  .contenedor-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: column; /* Esta propiedad mueve automaticamente las columnas en su lugar luego de haber puesto la posicion de los hijos*/
+    column-gap: 2rem;
+  }
+
+  .contenedor-principal{
+    grid-column:  2 / 3;
+  }
+
+  .sidebar-1{
+    grid-column: 1 / 2;
+  }
+
+
+
+}
