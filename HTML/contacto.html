@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- lang es importe para establecer si la pagina esta escrita en español o en cualquier otro idioma-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo Desarrollo Web</title> <!-- Representa el titulo de la página web-->
+</head>
+
+<body> <!-- Dentro de esta etiqueta va todo lo que se quiera mostrar en la web -->
+    <h1>Página de contacto</h1>
+
+    <ul>
+        <li>
+            <a href="./index.html">Inicio</a>
+        </li>
+        <li>
+            <a href="./contacto.html">Contactos</a>
+        </li>
+    </ul>
+
+    <h2>Tablas en html</h2>
+
+    <table border="1"> <!-- Con la etiqueta Table podemos crear una tabla en html-->
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Contacto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Carlos Alberto</td>
+                <td>Nin Queliz</td>
+                <td>829-531-3450</td>
+            </tr>
+            <tr>
+                <td>Pamela</td>
+                <td>Nin Queliz</td>
+                <td>829-531-3450</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Formulario en html</h2>
+
+    <form>
+        <fieldset>
+            <legend> Formulario de contactos</legend>
+            <div class="campos">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Tu nombre">
+            </div>
+
+            <div class="campos">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" name="apellidos" id="apellidos" placeholder="Tu apellido">
+            </div>
+
+            <div class="campos">
+                <label for="email">Correo Electronico</label>
+                <input type="email" name="email" id="email" placeholder="Tu correo">
+            </div>
+
+            <div class="campos">
+                <label for="sexo">Selecciona tu sexo</label>
+                <select name="sexo" id="sexo">
+                    <option disabled selected>-- Elige tu sexo --</option>
+                    <option value="masculino">Hombre</option>
+                    <option value="femenino">Mujer</option>
+                </select>
+            </div>
+
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>
