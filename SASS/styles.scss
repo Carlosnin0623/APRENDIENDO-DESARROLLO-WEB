@@ -1,0 +1,28 @@
+/* Cargar modulos a sass, con sasa puedes separar el diseño en parte mas pequeñas y luego unirlas al archivo principal
+esto hara mas facil trabajar cosas especificas*/
+
+@use 'anidacion';
+@use 'mixins';
+
+// Variables es SASS se crean con el signo de $
+
+$color-principal: #ccc;
+$color-letra: green;
+
+
+body{
+    background-color: $color-principal;
+}
+
+h1{
+    color: $color-letra;
+    text-align: center;
+}
+
+p{
+    color: $color-letra;
+}
+
+
+// Operaciones matematicas
+
