@@ -15,7 +15,6 @@ y... Es cierto que comi menos que pepe?
 
 */
 
-
 let HamburguesasYo = 2;
 let HamburguesasPepe = 3;
 let HamburguesasManolo = 6;

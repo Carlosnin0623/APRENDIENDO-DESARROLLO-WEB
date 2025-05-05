@@ -27,9 +27,11 @@ numerito *= 2;
 
 console.log(numerito);
 
-// Comparacion
+// Asignacion
 
 let numerazo = 20;
+
+// Comparacion
 
 console.log(numerazo == "20"); // true
 
