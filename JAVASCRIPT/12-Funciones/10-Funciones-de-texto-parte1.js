@@ -54,17 +54,3 @@ if(eslogan.includes("seguramente")){
 }
 
 
-// Buscar la posicion de una palabra
-
-let mensaje = "Estas aprendiendo Javascript como un autentico loco";
-
-console.log(mensaje.indexOf("autentico")); // 37
-console.log(mensaje.charAt(37)); // a
-
-
-
-// slice: Extrae parte de un texto
-
-let curso = "Master en Javascript";
-
-console.log(curso.slice(0,6));
