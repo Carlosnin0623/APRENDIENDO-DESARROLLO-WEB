@@ -80,3 +80,21 @@ for(let menu of cartaRestaurante){
 }
 
 
+// Hacer lo mismo con un for each
+
+
+cartaRestaurante.forEach((elemento) => {
+   
+    console.log("-------------------------");
+        elemento.forEach((productos) => {
+             if(Array.isArray(productos)){
+                 productos.forEach((informacion) => {
+                     console.log(informacion);
+                 })
+             }else{
+                console.log(productos);
+             }
+        })
+});
+
+
