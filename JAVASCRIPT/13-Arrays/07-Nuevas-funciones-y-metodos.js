@@ -84,7 +84,7 @@ fechas.copyWithin(0,3);
 
 console.log(fechas);
 
-// Convertir un string en un array con Array.from(String)
+// Array.from(string): Permite convertir un texto en un arreglo
 
 let nombre = "victor";
 
