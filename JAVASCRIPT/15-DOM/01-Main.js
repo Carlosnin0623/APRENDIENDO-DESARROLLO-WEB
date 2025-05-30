@@ -50,3 +50,31 @@ console.log(caja.className);
 caja.className = "cajaza cajon";
 
 console.log(caja.className);
+
+/* getElementByClassName - Permite seleccionar multiples elementos que tengan una misma clase,
+esto te devolvera un htmlCollection el parecido al array puedes selecionar los elementos por su indice
+
+puedes recorrerlo con un for como lo hacemos mas abajo
+
+*/
+
+
+let articulos = document.getElementsByClassName("articulo");
+
+for(let i = 0; articulos.length; i++){
+
+    articulos[i].style.border = "1px solid #ccc";
+    articulos[i].style.margin = "20px";
+    articulos[i].style.padding = "20px";
+
+}
+
+
+/* 
+
+RECOMENDABLE: QuerySelector
+
+RECOMENDABLE: QuerySelectorALL
+
+
+*/
