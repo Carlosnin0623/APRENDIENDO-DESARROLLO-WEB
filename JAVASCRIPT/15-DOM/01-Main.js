@@ -61,13 +61,52 @@ puedes recorrerlo con un for como lo hacemos mas abajo
 
 let articulos = document.getElementsByClassName("articulo");
 
-for(let i = 0; articulos.length; i++){
+for(let i = 0; i < articulos.length; i++){
 
+    articulos[i].classList.add("articuloBase");
     articulos[i].style.border = "1px solid #ccc";
     articulos[i].style.margin = "20px";
     articulos[i].style.padding = "20px";
 
+     // Añadir mas HTML
+    articulos[i].innerHTML += "<a href='https://victorroblesweb.es/ruta'>Leer más</a>";
+
+    // Añadir un nodo al dom
+
+    let enlace = document.createElement("a");
+    enlace.setAttribute("href","https://victorrobles.es"); // crear o mostrar atributo a un nodo
+
+    let textoEnlace = document.createTextNode("Sigue leyendo");  // Creando el texto para el nodo
+
+    enlace.append(textoEnlace);  // insertando un nodo dentro de otro
+    articulos[i].append(enlace); // Insertando ese nodo en cada articulo
+
+    if(i === 0){
+        articulos[i].classList.add("articuloAmarillo");
+    }
+
+    // Si queremos poner estilos al ultimo elemento usamos este hack usando length - 1 esto te dara el ultimo elemento
+
+    if(i === articulos.length - 1){
+      articulos[i].classList.add("articuloUltimo");
+
+
+      articulos[i].innerHTML = "<h2> Sigue leyendo mas cosas en VictorRoblesweb.com </h2>";
+    }
+
 }
+
+/* getElementByTagName: Permite seleccionar todos los elementos que contengan una etiqueta en espeficico,
+Devuelve un HTMLCollection al igual que  getElementsByClassName */
+
+
+let etiquetasArticulo = document.getElementsByTagName("article");
+
+console.log(etiquetasArticulo);
+
+etiquetasArticulo[2].style.backgroundColor = "green";
+etiquetasArticulo[2].style.color = "white";
+
 
 
 /* 

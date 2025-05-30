@@ -12,3 +12,22 @@
     line-height: 60px;
     border-radius: 10px;
 }
+
+.articuloBase{
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+.articuloAmarillo{
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+}
+
+.articuloUltimo{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
