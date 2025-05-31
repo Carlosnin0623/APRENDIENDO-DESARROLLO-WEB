@@ -26,6 +26,13 @@
     font-weight: bold;
 }
 
+.articuloRojo{
+    background-color: red;
+    color: black;
+    font-weight: bold;
+}
+
+
 .articuloUltimo{
     background-color: black;
     color: white;
